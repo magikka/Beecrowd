@@ -1,0 +1,29 @@
+Faça um programa que leia um vetor X[10].
+Substitua a seguir, todos os valores nulos e negativos do vetor X por 1. Em seguida mostre o vetor X.
+
+Entrada
+A entrada contém 10 valores inteiros, podendo ser positivos ou negativos.
+
+Saída
+Para cada posição do vetor, escreva "X[i] = x", onde i é a posição do vetor e x é o valor armazenado naquela posição.
+
+var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+var lines = input.split('\n');
+
+var prompt = function (texto){return lines.shift();};
+
+<meta charset="UTF-8">
+<script>
+
+var X = new Array(10);
+
+for(var i = 0; i <10; i++){
+    var x = parseInt(prompt());
+    if(x <= 0){
+        var x = 1;
+    }
+    X[i] = x;
+    console.log("X["+i+"] = "+x);
+}
+
+</script>
