@@ -1,6 +1,6 @@
-*/var input = require('fs').readFileSync('/dev/stdin', 'utf8');
+/*var input = require('fs').readFileSync('/dev/stdin', 'utf8');
 var lines = input.split('\n');
-var prompt = function(texto){return lines.shift();};/*
+var prompt = function(texto){return lines.shift();};*/
 
 var M = new Array(12);
 var coluna = parseInt(prompt());
